@@ -1,0 +1,35 @@
+#title{
+    background: black;
+    color: whitesmoke;
+    text-align: center;
+    padding: 2em;
+}
+
+#header{
+
+        border-radius: 20px;
+        width: 80%;
+
+}
+
+.wrapper{
+     display: Flex;
+    /* flex-direction: row*/
+
+}
+
+.alienDetails {
+
+    background: black;
+    margin: 2em;
+    width: 20em;
+    color: whitesmoke;
+    border-radius: 20px;
+
+}
+.alienMainPic {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
