@@ -1,21 +1,32 @@
 #title{
-    background: black;
+    /* background: black; */
+    opacity: .6;
+    padding: 2em;
+    text-align: center;
+
+}
+#title2{
+
     color: whitesmoke;
     text-align: center;
-    padding: 2em;
 }
 
 #header{
 
         border-radius: 20px;
-        width: 80%;
+        width: 100%;
 
 }
+.Alien {
+    display: flex;
+    flex-wrap: wrap
 
+}
 .wrapper{
      display: Flex;
-    /* flex-direction: row*/
-
+    flex-direction: row;
+    width: 22em;
+    /* opacity: .6 */
 }
 
 .alienDetails {
@@ -25,6 +36,7 @@
     width: 20em;
     color: whitesmoke;
     border-radius: 20px;
+    opacity: .6;
 
 }
 .alienMainPic {
@@ -33,3 +45,12 @@
     margin-right: auto;
     padding: 1em;
 }
+
+.backgroundGif img {
+
+    background: no-repeat;
+
+
+}
+
+

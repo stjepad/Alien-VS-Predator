@@ -11,25 +11,35 @@ const loadDatabaseAlien = function (localStorageKeyAlien) {
   let arrayAlien = loadDatabaseAlien("Alien Database")
 //   let arrayCons = loadDatabaseAlien("GeneralProfileCons")
 
-  console.log("ALien Database", arrayAlien)
-
-// ATTACH INFO TO HTML FILE
-const container = document.querySelector(".Alien");
-
+console.log("ALien Database", arrayAlien)
+let alienDiv = document.querySelector(".alien-div");
 // POST INFORMATION ON DOM THROUGH FOR LOOP
-  function addAlien(AlienArguement) {
-    for (let i = 0; i < AlienArguement.length; i++) {
+  function addAlien() {
+
+    for (let i = 0; i < arrayAlien.length; i++) {
       // console.log(AlienArguement)
-      container.innerHTML +=
+      alienDiv.innerHTML +=
         `<div class="wrapper">
           <div class="alienDetails">
-          <img height="209" width="140" class="alienMainPic"src="${AlienArguement[i].image}">
-              <h3>${AlienArguement[i].movie}</h3>
-              <p>${AlienArguement[i].year}</p>
-              ${AlienArguement[i].image}
-              <p>${AlienArguement[i].plotSummary}</p>
+          <img height="240" width="160" class="alienMainPic"src="${arrayAlien[i].image}">
+              <h3>${arrayAlien[i].movie}</h3>
+              <p>${arrayAlien[i].year}</p>
+              <p>${arrayAlien[i].plotSummary}</p>
             </div>
           </div>`
-    }
-  }
-  addAlien(arrayAlien);
+          }}
+          // ATTACH INFO TO HTML FILE
+          // const container = document.querySelector(".Alien");
+
+
+
+          // populateButton.addEventListener("click", function () {
+            //   const allCakes = makeAllTheCakes()
+            //   populateDB(allCakes)
+
+            // })
+            let AlienButton = document.querySelector("#AlienButton")
+
+            AlienButton.addEventListener("click", addAlien)
+
+
